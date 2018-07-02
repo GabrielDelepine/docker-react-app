@@ -1,0 +1,15 @@
+
+language: node_js
+node_js:
+  - 8
+cache:
+  directories:
+    - $HOME/.download
+install:
+  - npm i --prefer-offline
+  - sudo start-docker-daemon
+sudo: false
+script:
+  - npm run lint && npm test && npm run build && ci/publish.sh
+git:
+  submodules: false

@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "targets": {
+          "chrome": 62
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "babel-plugin-flow-react-proptypes",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread",
+    "transform-class-properties"
+  ]
+}
